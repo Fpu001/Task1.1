@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
+    <title>Lukuja</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Task1.1/CSS/CSS.css">
-    <script src="/Task1.1/JS/JS.js"></script>
-    <title>Document2</title>
-</head>
-<body>
-    testi testi
-    testi
-
-    testi
-    testi
-    testi
-
-    testi
-</body>
+    <script src="lukuja1.js"></script> 
+</head>                    
+    <body>
+        <h1>Lukuja</h1> <!--Otsikko-->
+        <form id="lukuja"> <!--Lomakkeen ID-->
+            Luku 1<br> <!--Kentän 1 otsikko-->
+            <input type="number" id="luku1"></p> <!--Kentän 1 syöttö-->
+            Luku 2<br> <!--Kentän 2 otsikko-->
+            <input type="number" id="luku2"></p> <!--Kentän 2 syöttö-->
+            <button type="button" onclick="luvutovat(lukuja.luku1.value, lukuja.luku2.value )"> 
+    Näytä luvut<br>
+        </button>
+        <div id="luvutovat"></div>
+    <p>Summa</p>
+        <input type="number" id="sum">
+        <button type="button" onclick="tulostavastaus()">
+        Laske</button>
+    <p>Tulo</p>
+        <input type="number" id="multiply">
+        <button type="button" onclick="multi()">
+        Laske</button>   
+    </form>    
+    </body>
 </html>
+
